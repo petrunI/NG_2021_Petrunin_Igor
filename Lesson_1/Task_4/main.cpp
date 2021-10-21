@@ -13,23 +13,6 @@ int main()
     cout << "Enter c: ";
     cin >> c;
 
-    //I have no idea why I did this xd
-    cout << "Quadratic equation: ";
-
-    if (a == 1) cout << "x^2 ";
-    else if (a == 0) cout << "";
-    else if (a == -1) cout << "-x^2 ";
-    else cout << a << "x^2 ";
-
-    if (b == 1) cout << "+ x";
-    else if (b == 0) cout << "";
-    else if (b == -1) cout << "- x";
-    else if (b < 0) cout << "- " << abs(b) << "x";
-    else cout << "+ " << b << "x";
-
-    if (c < 0) cout << " - " << abs(c) << " = 0" << endl;
-    else cout << " + " << c << " = 0" << endl;
-
     D = pow(b, 2) - 4 * a * c;
 
     if(D > 0){
