@@ -4,9 +4,10 @@ using namespace std;
 
 int main()
 {
-    int num, sum = 0, next = 0, prev = 0, hesh = 0;
+    int num, input, next = 0, prev = 0, hesh = 0;
     cout << "Enter your number: ";
-    cin >> num;
+    cin >> input;
+    num = input;
     int numFir = num % 10;
     while(num >= 1){
         next = num % 10;

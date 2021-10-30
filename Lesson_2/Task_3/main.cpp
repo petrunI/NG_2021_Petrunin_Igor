@@ -8,14 +8,11 @@ int main()
     cout << "Size: ";
     cin >> sqrSize;
     for(int i = 0; i < sqrSize; i++){
-        if(i == 0 || i == sqrSize-1){
-            for(int j = 0; j < sqrSize; j++) cout << "*";
-            cout << endl;
+        for(int j = 0; j < sqrSize; j++){
+            if(i == 0 || i == sqrSize-1 || j == 0 || j == sqrSize-1) cout << "*";
+            else cout << " ";
+
         }
-        else {
-            cout << "*";
-            for(int j = 0; j < sqrSize-2; j++) cout << " ";
-            cout << "*" << endl;
-        }
+        cout << endl;
     }
 }
