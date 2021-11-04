@@ -1,16 +1,15 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
 int main()
 {
-    int num, input, sum = 0;
+    int input, sum = 0;
     cout << "Enter your number: ";
     cin >> input;
-    num = input;
-    while (num >= 1){
-        sum = num % 10 + sum;
-        num /= 10;
+    for (int i = input; i > 0; i /= 10){
+        sum += i % 10;
     }
     cout << "Sum of digits in a number: " << sum;
     return 0;
