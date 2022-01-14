@@ -16,8 +16,8 @@ public:
     void setKey(int key);
     void getResult();
 private:
-    char cData[256] = {' '};
-    int cKey = 0;
+    char cData[256];
+    int cKey;
     char cEcryptedData[256];
 };
 

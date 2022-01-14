@@ -1,11 +1,6 @@
 #include <iostream>
 #include "ceaserencrypt.h"
 
-CeaserEncrypt::CeaserEncrypt()
-{
-
-}
-
 CeaserEncrypt::CeaserEncrypt(char data[])
 {
     for (int i = 0; data[i] != false; i++) {
@@ -52,7 +47,7 @@ void CeaserEncrypt::Decrypt()
             }
         }
     }
-    else if(cData[0] == false)
+    else if(cEcryptedData[0] == false)
         std::cout << "ERROR: NO ENCRYPTED DATA";
     else if(cKey == false)
         std::cout << "ERROR: NO KEY";
